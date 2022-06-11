@@ -1,0 +1,185 @@
+html {
+    font-family: 'Rubik', 'Roboto';
+    font-size: 20px;
+    margin: 0;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    position: absolute;
+    height: 100%;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    align-content: flex-start;
+} 
+header {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-items: center;
+    width: 100vw;
+    height: 5rem;
+    background-color: firebrick;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: whitesmoke;
+    font-weight: bold;
+}
+main {
+    background-image: url(./resources/cookie2.jpg), url(./resources/cookie4.jpg);
+    background-repeat: repeat;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.banner {
+    display: flex;
+    width: 25rem;
+    height: 10rem;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 0.2rem;
+    box-sizing: border-box;
+    margin-top: 0.3rem;
+    margin-bottom: 0.8rem;
+    resize: vertical;
+}
+
+select#country {
+    width: fit-content;
+    color: black;
+}
+.countryList {
+    color: black;
+    max-width: fit-content;
+    background-color: wheat;
+    max-height: 100px;
+    white-space: normal;
+    display: inline-flex;
+    font-size: smaller;
+    padding-bottom: 0px;
+    padding-left: 1px;
+    padding-right: 0px;
+}
+#fullNname{
+    overflow: hidden;
+    max-height: 15rem;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: purple;
+    font-style: italic;
+    font-size: larger;
+    display: flex;
+    height: 6rem;
+    width: 100%;
+    background-color: wheat;
+    border: none;
+}
+#getName {
+    margin-left: 2rem;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    background-color: firebrick;
+    color: white;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+#btn:hover {
+    cursor: pointer;
+    background-color: whitesmoke;
+    color: firebrick;
+}
+
+.container {
+    display: flex;
+    border-radius: 2rem;
+    background-color: wheat;
+    padding: 1rem;
+    width: 25rem;
+    height: 19rem;
+}
+form {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5rem;
+    background-color: firebrick;
+    color: whitesmoke;
+    font-weight: bold;
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.copyright {
+    display: inline-flex;
+}
+.location {
+    display: inline-flex;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 425px) {
+    header {
+        font-size: larger;
+        padding: 0 1rem; 
+    }
+    main {
+        background-image: url(./resources/cookie4.jpg);
+    }
+    form {
+        max-height: 600px;
+    }
+    .container {
+        padding: 0.5rem;
+        background-color: transparent;
+        color: wheat;
+        font-weight: bolder;
+    }
+    #fullNname {
+        height: 12rem;
+        opacity: 0.7;
+        font-weight: bolder;
+    }
+    footer { 
+         font-size: large;
+         align-items: flex-end;
+    }
+    }
+    

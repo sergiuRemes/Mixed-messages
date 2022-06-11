@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Damion" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" type="text/css">
+  <title>Fortune cookie</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script> -->
+</head>
+<body>
+  <!-- Header -->
+  <header>
+      <div>Fortune cookie generating app</div>
+  </header>
+  
+  <!-- Main -->
+  <main>
+    <div class="container">
+      <form>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname" value="" placeholder="Your name.." required><br>
+    
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname" value=""  placeholder="Your last name.." required><br>
+    
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option class="countryList" value="Afganistan">Afghanistan</option>
+          <option class="countryList"  value="Albania">Albania</option>
+          <option class="countryList"  value="Algeria">Algeria</option>
+          <option class="countryList"  value="American Samoa">American Samoa</option>
+          <option class="countryList"  value="Andorra">Andorra</option>
+          <option class="countryList"  value="Angola">Angola</option>
+          <option class="countryList"  value="Anguilla">Anguilla</option>
+          <option class="countryList"  value="Antigua & Barbuda">Antigua & Barbuda</option>
+          <option class="countryList"  value="Argentina">Argentina</option>
+          <option class="countryList"  value="Armenia">Armenia</option>
+          <option class="countryList" value="Aruba">Aruba</option>
+          <option class="countryList"  value="Australia">Australia</option>
+          <option class="countryList"  value="Austria">Austria</option>
+          <option class="countryList" value="Azerbaijan">Azerbaijan</option>
+          <option class="countryList"  value="Bahamas">Bahamas</option>
+          <option class="countryList" value="Bahrain">Bahrain</option>
+          <option class="countryList"  value="Bangladesh">Bangladesh</option>
+          <option class="countryList"  value="Barbados">Barbados</option>
+          <option class="countryList"  value="Belarus">Belarus</option>
+          <option class="countryList"  value="Belgium">Belgium</option>
+          <option class="countryList"  value="Belize">Belize</option>
+          <option class="countryList"  value="Benin">Benin</option>
+          <option class="countryList"  value="Bermuda">Bermuda</option>
+          <option class="countryList"  value="Bhutan">Bhutan</option>
+          <option class="countryList"  value="Bolivia">Bolivia</option>
+          <option class="countryList"  value="Bonaire">Bonaire</option>
+          <option class="countryList"  value="Bosnia & Herzegovina">Bosnia & Herzegovina</option>
+          <option class="countryList"  value="Botswana">Botswana</option>
+          <option class="countryList"  value="Brazil">Brazil</option>
+          <option class="countryList"  value="British Indian Ocean Ter">British Indian Ocean Ter</option>
+          <option class="countryList"  value="Brunei">Brunei</option>
+          <option class="countryList"  value="Bulgaria">Bulgaria</option>
+          <option class="countryList"  value="Burkina Faso">Burkina Faso</option>
+          <option class="countryList"  value="Burundi">Burundi</option>
+          <option class="countryList"  value="Cambodia">Cambodia</option>
+          <option class="countryList"  value="Cameroon">Cameroon</option>
+          <option class="countryList"  value="Canada">Canada</option>
+          <option class="countryList"  value="Canary Islands">Canary Islands</option>
+          <option class="countryList"  value="Cape Verde">Cape Verde</option>
+          <option class="countryList"  value="Cayman Islands">Cayman Islands</option>
+          <option class="countryList"  value="Central African Republic">Central African Republic</option>
+          <option class="countryList" value="Chad">Chad</option>
+          <option class="countryList"  value="Channel Islands">Channel Islands</option>
+          <option class="countryList"  value="Chile">Chile</option>
+          <option class="countryList"  value="China">China</option>
+          <option class="countryList"  value="Christmas Island">Christmas Island</option>
+          <option class="countryList"  value="Cocos Island">Cocos Island</option>
+          <option class="countryList"  value="Colombia">Colombia</option>
+          <option class="countryList"  value="Comoros">Comoros</option>
+          <option class="countryList"  value="Congo">Congo</option>
+          <option class="countryList"  value="Cook Islands">Cook Islands</option>
+          <option class="countryList"  value="Costa Rica">Costa Rica</option>
+          <option class="countryList"  value="Cote DIvoire">Cote DIvoire</option>
+          <option class="countryList"  value="Croatia">Croatia</option>
+          <option class="countryList"  value="Cuba">Cuba</option>
+          <option class="countryList"  value="Curaco">Curacao</option>
+          <option class="countryList"  value="Cyprus">Cyprus</option>
+          <option class="countryList"  value="Czech Republic">Czech Republic</option>
+          <option class="countryList"  value="Denmark">Denmark</option>
+          <option class="countryList"  value="Djibouti">Djibouti</option>
+          <option class="countryList"  value="Dominica">Dominica</option>
+          <option class="countryList"  value="Dominican Republic">Dominican Republic</option>
+          <option class="countryList"  value="East Timor">East Timor</option>
+          <option class="countryList"  value="Ecuador">Ecuador</option>
+          <option class="countryList"  value="Egypt">Egypt</option>
+          <option class="countryList"  value="El Salvador">El Salvador</option>
+          <option class="countryList"  value="Equatorial Guinea">Equatorial Guinea</option>
+          <option class="countryList"  value="Eritrea">Eritrea</option>
+          <option class="countryList"  value="Estonia">Estonia</option>
+          <option class="countryList"  value="Ethiopia">Ethiopia</option>
+          <option class="countryList"  value="Falkland Islands">Falkland Islands</option>
+          <option class="countryList"  value="Faroe Islands">Faroe Islands</option>
+          <option class="countryList"  value="Fiji">Fiji</option>
+          <option class="countryList"  value="Finland">Finland</option>
+          <option class="countryList"  value="France">France</option>
+          <option class="countryList"  value="French Guiana">French Guiana</option>
+          <option class="countryList"  value="French Polynesia">French Polynesia</option>
+          <option class="countryList"  value="French Southern Ter">French Southern Ter</option>
+          <option class="countryList"  value="Gabon">Gabon</option>
+          <option class="countryList"  value="Gambia">Gambia</option>
+          <option class="countryList"  value="Georgia">Georgia</option>
+          <option class="countryList"  value="Germany">Germany</option>
+          <option class="countryList"  value="Ghana">Ghana</option>
+          <option class="countryList"  value="Gibraltar">Gibraltar</option>
+          <option class="countryList"  value="Great Britain">Great Britain</option>
+          <option class="countryList"  value="Greece">Greece</option>
+          <option class="countryList"  value="Greenland">Greenland</option>
+          <option class="countryList"  value="Grenada">Grenada</option>
+          <option class="countryList"  value="Guadeloupe">Guadeloupe</option>
+          <option class="countryList"  value="Guam">Guam</option>
+          <option class="countryList"  value="Guatemala">Guatemala</option>
+          <option class="countryList"  value="Guinea">Guinea</option>
+          <option class="countryList"  value="Guyana">Guyana</option>
+          <option class="countryList"  value="Haiti">Haiti</option>
+          <option class="countryList"  value="Hawaii">Hawaii</option>
+          <option class="countryList"  value="Honduras">Honduras</option>
+          <option class="countryList"  value="Hong Kong">Hong Kong</option>
+          <option class="countryList"  value="Hungary">Hungary</option>
+          <option class="countryList"  value="Iceland">Iceland</option>
+          <option class="countryList"  value="Indonesia">Indonesia</option>
+          <option class="countryList"  value="India">India</option>
+          <option class="countryList"  value="Iran">Iran</option>
+          <option class="countryList"  value="Iraq">Iraq</option>
+          <option class="countryList"  value="Ireland">Ireland</option>
+          <option class="countryList"  value="Isle of Man">Isle of Man</option>
+          <option class="countryList"  value="Israel">Israel</option>
+          <option class="countryList"  value="Italy">Italy</option>
+          <option class="countryList"  value="Jamaica">Jamaica</option>
+          <option class="countryList"  value="Japan">Japan</option>
+          <option class="countryList"  value="Jordan">Jordan</option>
+          <option class="countryList"  value="Kazakhstan">Kazakhstan</option>
+          <option class="countryList"  value="Kenya">Kenya</option>
+          <option class="countryList"  value="Kiribati">Kiribati</option>
+          <option class="countryList"  value="Korea North">Korea North</option>
+          <option class="countryList"  value="Korea Sout">Korea South</option>
+          <option class="countryList"  value="Kuwait">Kuwait</option>
+          <option class="countryList"  value="Kyrgyzstan">Kyrgyzstan</option>
+          <option class="countryList"  value="Laos">Laos</option>
+          <option class="countryList"  value="Latvia">Latvia</option>
+          <option class="countryList"  value="Lebanon">Lebanon</option>
+          <option class="countryList"  value="Lesotho">Lesotho</option>
+          <option class="countryList"  value="Liberia">Liberia</option>
+          <option class="countryList"  value="Libya">Libya</option>
+          <option class="countryList"  value="Liechtenstein">Liechtenstein</option>
+          <option class="countryList"  value="Lithuania">Lithuania</option>
+          <option class="countryList"  value="Luxembourg">Luxembourg</option>
+          <option class="countryList"  value="Macau">Macau</option>
+          <option class="countryList"  value="Macedonia">Macedonia</option>
+          <option class="countryList"  value="Madagascar">Madagascar</option>
+          <option class="countryList"  value="Malaysia">Malaysia</option>
+          <option class="countryList"  value="Malawi">Malawi</option>
+          <option class="countryList"  value="Maldives">Maldives</option>
+          <option class="countryList"  value="Mali">Mali</option>
+          <option class="countryList"  value="Malta">Malta</option>
+          <option class="countryList"  value="Marshall Islands">Marshall Islands</option>
+          <option class="countryList"  value="Martinique">Martinique</option>
+          <option class="countryList"  value="Mauritania">Mauritania</option>
+          <option class="countryList"  value="Mauritius">Mauritius</option>
+          <option class="countryList"  value="Mayotte">Mayotte</option>
+          <option class="countryList"  value="Mexico">Mexico</option>
+          <option class="countryList"  value="Midway Islands">Midway Islands</option>
+          <option class="countryList"  value="Moldova">Moldova</option>
+          <option class="countryList"  value="Monaco">Monaco</option>
+          <option class="countryList"  value="Mongolia">Mongolia</option>
+          <option class="countryList"  value="Montserrat">Montserrat</option>
+          <option class="countryList"  value="Morocco">Morocco</option>
+          <option class="countryList"  value="Mozambique">Mozambique</option>
+          <option class="countryList"  value="Myanmar">Myanmar</option>
+          <option class="countryList"  value="Nambia">Nambia</option>
+          <option class="countryList"  value="Nauru">Nauru</option>
+          <option class="countryList"  value="Nepal">Nepal</option>
+          <option class="countryList"  value="Netherland Antilles">Netherland Antilles</option>
+          <option class="countryList"  value="Netherlands">Netherlands (Holland)</option>
+          <option class="countryList"  value="Nevis">Nevis</option>
+          <option class="countryList"  value="New Caledonia">New Caledonia</option>
+          <option class="countryList"  value="New Zealand">New Zealand</option>
+          <option class="countryList"  value="Nicaragua">Nicaragua</option>
+          <option class="countryList"  value="Niger">Niger</option>
+          <option class="countryList"  value="Nigeria">Nigeria</option>
+          <option class="countryList"  value="Niue">Niue</option>
+          <option class="countryList"  value="Norfolk Island">Norfolk Island</option>
+          <option class="countryList"  value="Norway">Norway</option>
+          <option class="countryList"  value="Oman">Oman</option>
+          <option class="countryList"  value="Pakistan">Pakistan</option>
+          <option class="countryList"  value="Palau Island">Palau Island</option>
+          <option class="countryList"  value="Palestine">Palestine</option>
+          <option class="countryList"  value="Panama">Panama</option>
+          <option class="countryList"  value="Papua New Guinea">Papua New Guinea</option>
+          <option class="countryList"  value="Paraguay">Paraguay</option>
+          <option class="countryList"  value="Peru">Peru</option>
+          <option class="countryList"  value="Phillipines">Philippines</option>
+          <option class="countryList"  value="Pitcairn Island">Pitcairn Island</option>
+          <option class="countryList"  value="Poland">Poland</option>
+          <option class="countryList"  value="Portugal">Portugal</option>
+          <option class="countryList"  value="Puerto Rico">Puerto Rico</option>
+          <option class="countryList"  value="Qatar">Qatar</option>
+          <option class="countryList"  value="Republic of Montenegro">Republic of Montenegro</option>
+          <option class="countryList"  value="Republic of Serbia">Republic of Serbia</option>
+          <option class="countryList"  value="Reunion">Reunion</option>
+          <option class="countryList"  value="Romania">Romania</option>
+          <option class="countryList"  value="Russia">Russia</option>
+          <option class="countryList"  value="Rwanda">Rwanda</option>
+          <option class="countryList"  value="St Barthelemy">St Barthelemy</option>
+          <option class="countryList"  value="St Eustatius">St Eustatius</option>
+          <option class="countryList"  value="St Helena">St Helena</option>
+          <option class="countryList"  value="St Kitts-Nevis">St Kitts-Nevis</option>
+          <option class="countryList"  value="St Lucia">St Lucia</option>
+          <option class="countryList"  value="St Maarten">St Maarten</option>
+          <option class="countryList"  value="St Pierre & Miquelon">St Pierre & Miquelon</option>
+          <option class="countryList"  value="St Vincent & Grenadines">St Vincent & Grenadines</option>
+          <option class="countryList"  value="Saipan">Saipan</option>
+          <option class="countryList"  value="Samoa">Samoa</option>
+          <option class="countryList"  value="Samoa American">Samoa American</option>
+          <option class="countryList"  value="San Marino">San Marino</option>
+          <option class="countryList"  value="Sao Tome & Principe">Sao Tome & Principe</option>
+          <option class="countryList"  value="Saudi Arabia">Saudi Arabia</option>
+          <option class="countryList"  value="Senegal">Senegal</option>
+          <option class="countryList"  value="Seychelles">Seychelles</option>
+          <option class="countryList"  value="Sierra Leone">Sierra Leone</option>
+          <option class="countryList"  value="Singapore">Singapore</option>
+          <option class="countryList"  value="Slovakia">Slovakia</option>
+          <option class="countryList"  value="Slovenia">Slovenia</option>
+          <option class="countryList"  value="Solomon Islands">Solomon Islands</option>
+          <option class="countryList"  value="Somalia">Somalia</option>
+          <option class="countryList"  value="South Africa">South Africa</option>
+          <option class="countryList"  value="Spain">Spain</option>
+          <option class="countryList"  value="Sri Lanka">Sri Lanka</option>
+          <option class="countryList"  value="Sudan">Sudan</option>
+          <option class="countryList"  value="Suriname">Suriname</option>
+          <option class="countryList"  value="Swaziland">Swaziland</option>
+          <option class="countryList"  value="Sweden">Sweden</option>
+          <option class="countryList"  value="Switzerland">Switzerland</option>
+          <option class="countryList"  value="Syria">Syria</option>
+          <option class="countryList"  value="Tahiti">Tahiti</option>
+          <option class="countryList"  value="Taiwan">Taiwan</option>
+          <option class="countryList"  value="Tajikistan">Tajikistan</option>
+          <option class="countryList"  value="Tanzania">Tanzania</option>
+          <option class="countryList"  value="Thailand">Thailand</option>
+          <option class="countryList"  value="Togo">Togo</option>
+          <option class="countryList"  value="Tokelau">Tokelau</option>
+          <option class="countryList"  value="Tonga">Tonga</option>
+          <option class="countryList"  value="Trinidad & Tobago">Trinidad & Tobago</option>
+          <option class="countryList"  value="Tunisia">Tunisia</option>
+          <option class="countryList"  value="Turkey">Turkey</option>
+          <option class="countryList"  value="Turkmenistan">Turkmenistan</option>
+          <option class="countryList"  value="Turks & Caicos Is">Turks & Caicos Is</option>
+          <option class="countryList"  value="Tuvalu">Tuvalu</option>
+          <option class="countryList"  value="Uganda">Uganda</option>
+          <option class="countryList"  value="United Kingdom">United Kingdom</option>
+          <option class="countryList"  value="Ukraine">Ukraine</option>
+          <option class="countryList"  value="United Arab Erimates">United Arab Emirates</option>
+          <option class="countryList"  value="United States of America">United States of America</option>
+          <option class="countryList"  value="Uraguay">Uruguay</option>
+          <option class="countryList"  value="Uzbekistan">Uzbekistan</option>
+          <option class="countryList"  value="Vanuatu">Vanuatu</option>
+          <option class="countryList"  value="Vatican City State">Vatican City State</option>
+          <option class="countryList"  value="Venezuela">Venezuela</option>
+          <option class="countryList"  value="Vietnam">Vietnam</option>
+          <option class="countryList"  value="Virgin Islands (Brit)">Virgin Islands (Brit)</option>
+          <option class="countryList"  value="Virgin Islands (USA)">Virgin Islands (USA)</option>
+          <option class="countryList"  value="Wake Island">Wake Island</option>
+          <option class="countryList"  value="Wallis & Futana Is">Wallis & Futana Is</option>
+          <option class="countryList"  value="Yemen">Yemen</option>
+          <option class="countryList"  value="Zaire">Zaire</option>
+          <option class="countryList"  value="Zambia">Zambia</option>
+          <option class="countryList"  value="Zimbabwe">Zimbabwe</option>
+        </select><br>    
+     
+        <button type="button" id="getName">PICK A FORTUNE COOKIE </button>
+         <textarea type="text" id="fullNname" name="fullNname" value=""></textarea>
+      <!--   
+          <input id="btn" type="button" onclick="myFunction()" value="PICK A FORTUNE COOKIE"><br>
+       
+        <p id="fullNname"></p>
+             -->
+          
+      </form>
+    </div>
+  </main>
+  
+    <!-- Footer -->
+    <footer>
+      <div class="content">
+        <span class="copyright">© 2022 Top 100 Fortune Cookie Company, <br>
+                                All Rights Reserved</span> <br><br>
+        <span class="location">Designed in the UK</span>
+      </div>
+    </footer>
+    <script>
+const firstName = document.getElementById("fname");
+const lastName = document.getElementById("lname");
+const fullNme = document.getElementById("fullNname");
+const getName = document.getElementById("getName");
+
+getName.addEventListener("click", () => fullNname.value = fullName(firstName, lastName)+":" + "\n"+aCookie()+  "\n"+bCookie()+  "\n"+cCookie())
+
+const a = ['Your sign is sun.', 'Your sign is moon.', 'Your sign is leo.', 'Your sign is cancer.', 'Your sign is Perseus.', 'Your sign is Jupiter.', 'Your sign is Mars.', 'Your sign is Venus.']
+const b = ['You are having good luck.', 'You are getting richer.', 'You are on the right path.', 'Someone is waiting for you.', 'Great year ahead.', 'You will make new friends.', 'Love is around the corner.']
+const c = ['You should: "trust no one".', 'You should trust yourself.']
+const aCookie = () => {
+    return a[Math.floor(Math.random() * 8)];
+};
+const bCookie = () => {
+    return b[Math.floor(Math.random() * 7)];
+};
+const cCookie = () => {
+    return c[Math.floor(Math.random() * 2)];
+};
+
+function fullName(firstName, lastName) {
+  return firstName.value + " " + lastName.value;
+}
+</script>
+</body>
+</html>
